@@ -4,6 +4,7 @@
 @import "swiper-popular"
 @import "variables"
 @import "burger"
+@import "animations"
 
 //*
   border: 1px solid red
@@ -179,6 +180,8 @@
         top: 85px
         right: 102px
         z-index: 0
+        opacity: 1
+        animation: 2s header-image ease-out
         @media screen and (max-width: 1530px)
           width: 700px
           top: 85px
@@ -196,6 +199,8 @@
         @media screen and (max-width: 767px)
           display: none
       &-label
+        opacity: 1
+        animation: 2s header-label ease-out
         @include boldText (900, 4.5rem, 4.0625rem, $mainBlack)
         letter-spacing: -0.025em
         margin-bottom: 30px
@@ -211,11 +216,15 @@
 
 
     &-text
+      opacity: 1
+      animation: 2s header-label ease-out
       @include text (400, 1.125rem, 1.5625rem, $mainBlack)
       margin-bottom: 30px
       max-width: 555px
       overflow: hidden
     &-button
+      opacity: 1
+      animation: 2s header-label ease-out
       @include buttonGreen
       display: block
       max-width: fit-content
@@ -251,6 +260,9 @@
           width: 280px
           height: auto
           margin: auto
+        &.animated
+          opacity: 1
+          animation: 2s help-block-image-show ease-out
         & img
           width: 100%
       &.form
@@ -267,6 +279,9 @@
             padding: 30px
           @media screen and (max-width: 767px)
             padding: 10px
+        &.animated
+          opacity: 1
+          animation: 2s help-block-form-show ease-out
       &-label
         @include boldText (900, 2.75rem, 2.475rem, $mainBlack)
         margin-bottom: 29px

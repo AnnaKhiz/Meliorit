@@ -9,13 +9,17 @@
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="./js/burger.js" defer></script>
+  <script src="./js/back.js" defer></script>
+  <script src="./js/swiper.js" defer></script>
+  <script src="./js/observer.js" defer></script>
 	<title>Melorit</title>
 </head>
 
 <body>
+
 	<header class="header">
 		<div id="button-back" class="button-back"></div>
 		<div class="containerMain">
@@ -111,15 +115,15 @@
 							<path d="M25 7L7 25" stroke-width="2" />
 						</svg>
 					</a>
-					<ul class="burger__list-menu accordion-burger" id="accordionExample">
+					<ul class="burger__list-menu accordion-burger" id="accordionBurger">
 						<li class="burger__item accordion-item-burger">
-							<h2 class="accordion-header" id="headingOne">
+							<h2 class="accordion-header" id="headingBurgerOne">
 								<a href="#" class="accordion-burger-button main__questions-item-label" data-bs-toggle="collapse"
-									data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									data-bs-target="#collapseBurgerOne" aria-expanded="true" aria-controls="collapseBurgerOne">
 									Межсетевые экраны
 								</a>
 							</h2>
-							<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+							<div id="collapseBurgerOne" class="accordion-collapse collapse" aria-labelledby="headingBurgerOne"
 								data-bs-parent="#accordionExample">
 								<ul class="burger__item-sublistDisplays accordion-body">
 									<li><a href="#">Пункт меню 1</a></li>
@@ -130,13 +134,13 @@
 						</li>
 						<li class="burger__item"><a href="#">Консалтинг и аудит </a></li>
 						<li class="burger__item accordion-item-burger">
-							<h2 class="accordion-header" id="headingTwo">
+							<h2 class="accordion-header" id="headingBurgerTwo">
 								<a href="#" class="accordion-burger-button main__questions-item-label" data-bs-toggle="collapse"
-									data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+									data-bs-target="#collapseBurgerTwo" aria-expanded="true" aria-controls="collapseBurgerTwo">
 									Блог
 								</a>
 							</h2>
-							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+							<div id="collapseBurgerTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
 								data-bs-parent="#accordionExample">
 								<ul class="burger__item-sublistDisplays accordion-body">
 									<li><a href="#">Пункт меню 2/1</a></li>
@@ -146,13 +150,13 @@
 							</div>
 						</li>
 						<li class="burger__item accordion-item-burger">
-							<h2 class="accordion-header" id="headingThree">
+							<h2 class="accordion-header" id="headingBurgerThree">
 								<a href="#" class="accordion-burger-button main__questions-item-label" data-bs-toggle="collapse"
-									data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+									data-bs-target="#collapseBurgerThree" aria-expanded="true" aria-controls="collapseBurgerThree">
 									О компании
 								</a>
 							</h2>
-							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+							<div id="collapseBurgerThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
 								data-bs-parent="#accordionExample">
 								<ul class="burger__item-sublistDisplays accordion-body">
 									<li><a href="#">Пункт меню 3/1</a></li>
@@ -190,7 +194,7 @@
 
 	<main class="main">
 		<section class="main__help">
-			<div class="containerMain">
+			<div class="containerMain" >
 				<div class="main__help-container">
 
 					<div class="main__help-item picture">
@@ -215,7 +219,7 @@
 			</div>
 		</section>
 
-		<section class="main__popular">
+		<section class="main__popular" id="sectionAfterHelp">
 			<div class="containerMain">
 				<div class="main__popular-header">
 					<div class="main__popular-header-label">
@@ -651,10 +655,7 @@
 		</div>
 	</footer>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-	 <script src="./js/back.js"></script>
-	<script src="./js/swiper.js"></script>
-	<script src="./js/burger.js"></script>
+
 
 </body>
 
