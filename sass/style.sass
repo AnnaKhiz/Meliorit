@@ -248,6 +248,7 @@
         display: block
     &-item
       &.picture
+        opacity: 0
         width: 583px
         height: 507px
         display: flex
@@ -259,10 +260,11 @@
           margin: auto
         &.animated
           opacity: 1
-          animation: 2s help-block-image-show ease-out
+          animation: 1s help-block-image-show ease-out
         & img
           width: 100%
       &.form
+        opacity: 0
         width: 450px
         height: 389px
         box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1)
@@ -278,7 +280,7 @@
             padding: 10px
         &.animated
           opacity: 1
-          animation: 2s help-block-form-show ease-out
+          animation: 1s help-block-form-show ease-out
       &-label
         @include boldText (900, 2.75rem, 2.475rem, $mainBlack)
         margin-bottom: 29px

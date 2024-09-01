@@ -933,6 +933,7 @@ body .swiper-pagination-second-bullet-active {
   }
 }
 .main__help-item.picture {
+  opacity: 0;
   width: 583px;
   height: 507px;
   display: flex;
@@ -948,12 +949,13 @@ body .swiper-pagination-second-bullet-active {
 }
 .main__help-item.picture.animated {
   opacity: 1;
-  animation: 2s help-block-image-show ease-out;
+  animation: 1s help-block-image-show ease-out;
 }
 .main__help-item.picture img {
   width: 100%;
 }
 .main__help-item.form {
+  opacity: 0;
   width: 450px;
   height: 389px;
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
@@ -980,7 +982,7 @@ body .swiper-pagination-second-bullet-active {
 }
 .main__help-item.form.animated {
   opacity: 1;
-  animation: 2s help-block-form-show ease-out;
+  animation: 1s help-block-form-show ease-out;
 }
 .main__help-item-label {
   font: 900 normal 2.75rem "Inter";
