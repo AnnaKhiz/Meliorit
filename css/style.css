@@ -1021,12 +1021,27 @@ body .swiper-pagination-second-bullet-active {
     display: block;
   }
 }
+.main__help-item-subitem .input-container {
+  position: relative;
+  height: 45px;
+  width: 106px;
+}
+.main__help-item-subitem .input-container:after {
+  position: absolute;
+  top: 8px;
+  right: 6px;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 30px;
+  border-radius: 6px;
+  background: #FFFFFF;
+}
 .main__help-item-subitem input {
   border: 1px solid #b3b3b3;
   border-radius: 6px;
   background-color: #FFFFFF;
-  height: 45px;
-  width: 106px;
+  width: 100%;
   overflow: hidden;
   padding: 10px;
   transition: all ease-in-out 0.3s;

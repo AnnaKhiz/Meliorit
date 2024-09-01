@@ -6,9 +6,6 @@
 @import "burger"
 @import "animations"
 
-//*
-  border: 1px solid red
-
 .containerMain
   max-width: 1750px
   padding: 0 15px
@@ -303,12 +300,25 @@
         align-items: center
         @media screen and (max-width: 1024px)
           display: block
+        & .input-container
+          position: relative
+          height: 45px
+          width: 106px
+          &:after
+            position: absolute
+            top: 8px
+            right: 6px
+            content: ''
+            display: block
+            width: 20px
+            height: 30px
+            border-radius: 6px
+            background: #FFFFFF
         & input
           border: 1px solid $footerText
           border-radius: 6px
           background-color: $colorWhite
-          height: 45px
-          width: 106px
+          width: 100%
           overflow: hidden
           padding: 10px
           @include tran
